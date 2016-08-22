@@ -14,6 +14,13 @@ namespace Windows_Configurator {
             InitializeComponent();
         }
 
+        // Menu strip: File/Open...
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open file dialog to select a config file
+            ofdConfig.ShowDialog();
+        }
+
         // Menu strip: File/Exit
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
