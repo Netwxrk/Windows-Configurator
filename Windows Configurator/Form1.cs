@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Windows_Configurator
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
+namespace Windows_Configurator {
+    public partial class Form1 : Form  {
+        public Form1() {
             InitializeComponent();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(250);
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("", "About");
         }
     }
 }
