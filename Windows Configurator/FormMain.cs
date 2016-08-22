@@ -31,7 +31,14 @@ namespace Windows_Configurator {
 
             // Set title and text of the popup window
             popup.Text = "About";
-            popup.setPopupText("The 'Windows Configurator' is a simplistic, yet powerfull tool to fully configure your Windows 7 Operating System and remove all the security or privacy flaws.");
+            popup.setPopupText("The 'Windows Configurator' is a simplistic, yet powerfull tool to fully configure your Windows 7 Operating System and remove all the security or privacy flaws.\r\n\r\n\r\n\r\n\r\n\r\n(c) 2016 Netwxrk");
+        }
+
+        // Menu strip: Help/What's new
+        private void whatsNewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Redirect to Github page for changelog
+            System.Diagnostics.Process.Start("https://github.com/Netwxrk/Windows-Configurator/commits/master");
         }
     }
 }

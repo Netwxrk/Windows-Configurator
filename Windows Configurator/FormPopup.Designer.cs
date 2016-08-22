@@ -41,7 +41,7 @@
             this.rtbPopup.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbPopup.Size = new System.Drawing.Size(360, 238);
             this.rtbPopup.TabIndex = 0;
-            this.rtbPopup.Text = "12345678901234567890123456789012345678901234567890\n";
+            this.rtbPopup.Text = "";
             // 
             // FormPopup
             // 
@@ -49,11 +49,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 262);
             this.Controls.Add(this.rtbPopup);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormPopup";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPopup";
             this.ResumeLayout(false);
 
